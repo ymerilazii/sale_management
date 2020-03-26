@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{{ MEDIA_URL }}icon/logo.ico">
+    <link rel="apple-touch-icon" href="{{ MEDIA_URL }}icon/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background: #ebebeb;
+
+        }
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            line-height: 1.5;
+        }
+        .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+    border: 1px solid #272727;
+
+}
+        .btn{
+            border-radius: 40px;
+        }
+        .widget-chart{
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+        }
+        .card-border{
+            box-shadow: 0 0 0 transparent;
+            border-width: 1px;
+        }
+        .bg-arielle-smile{
+            background: rgb(43,255,185);
+background: linear-gradient(87deg, rgba(43,255,185,1) 0%, rgba(40,204,230,1) 50%, rgba(43,255,185,1) 100%);
+        }
+        .icon-wrapper{
+            width: 54px;
+            height: 54px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-content: center;
+            align-items: center;
+        }
+        .icon-wrapper .icon-wrapper-bg{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: 3;
+        }
+        .opacity-10{
+            opacity: 1!important;
+        }
+        .icon-wrapper i{
+            margin: 0 auto;
+            font-size: 29px;
+            position: relative;
+            z-index: 5;
+        }
+        .icon-gradient{
+
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-fill-color:transparent;
+        }
+        .icon-wrapper i:before{
+            margin-top: -3px;
+        }
+        .widget-chart .widget-numbers{
+            font-weight: bold;
+            font-size:2.95rem;
+            display: block;
+            line-height: 1;
+            margin: 1rem auto;
+        }
+        .widget-chart .widget-subheading {
+    margin: -0.5rem 0 0;
+    display: block;
+    opacity: .6;
+}
+    </style>
+    <title>Niti SHOP</title>
+</head>
+<body>
+<a href="{{ '/' }}"><img src="{{ MEDIA_URL }}logo.png" class="mx-auto img-fluid d-block mt-4" width="460"></a>
+<div class="container" style="margin-top: -35px">
+{% block content %}
+
+{% endblock %}
+</div>
+
+<div class="container-fluid" style="margin-top: 30px">
+{% block table %}
+
+{% endblock %}
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
